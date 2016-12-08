@@ -1,0 +1,342 @@
+﻿html, body
+{
+    font: 28px Calibri;
+    background: #BEBEBE;
+    width: 100%;
+    min-height: 100%;
+}
+
+menu
+{
+    background: none;
+    display: block;
+    margin: 4px;
+    float: inherit;
+    width: 96%
+    
+
+}
+
+menu ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+
+  }
+
+    menu ul li {
+      display: inline-block;
+      list-style-type: none;
+      background: #6699FF;
+
+
+      
+    }
+      
+      
+
+      menu > ul > li > a {
+        color: #000000; /* font colour */
+        display: block;
+        line-height: 56px;
+        padding: 0 24px;
+        text-decoration: none;
+      }
+
+        menu > ul > li:hover
+{
+    background-color: #A8D3FF;
+}
+
+        menu > ul > li:hover > a {
+          color: #000000;
+        }
+
+      
+
+content
+{
+    min-height: 800px;
+    display: flex;
+    flex-flow: row;
+    margin: 4px;
+    padding: 0px;
+    border: 1px solid #6699FF;
+    border-radius: 0pt;
+    background: #6699FF;
+    flex: 3 1 75%;
+    order: 2;
+
+}
+
+nav
+{
+    min-height: 800px;
+    min-width:10%;
+    display: inline-block;
+    float: left;
+    margin: 4px;
+    padding: 0px;
+    border: 1px solid #000000;
+    border-radius: 0pt;
+    background: #6699FF;
+
+    
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav button
+{
+     background:none!important;
+     border:none; 
+     padding:0!important;
+     font: 20px calibri;
+     border: 1px solid #6699FF;
+     border-radius: 0pt;
+     cursor: pointer;
+}
+
+
+header
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+    min-height: 100px;
+    vertical-allign: middle;
+    border-radius: 7pt;
+    background: none;
+    width: 98%
+    
+}
+
+header img
+{
+    display:block; 
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+footer
+{
+    display: inline-block;
+    margin: 4px;
+    padding: 5px;
+    min-height: 80px;
+    border: 1px solid #000000;
+    background: #6699FF;
+    width: 97.7%
+    
+}
+
+
+article
+{
+    margin: 4px;
+    float: left;
+    border: 1px solid #000000;
+    border-radius: 0pt;
+    background: #6699FF;
+    width: 87.65%;
+    min-height: 800px;
+
+}
+
+#homeArticle
+{
+    margin: 4px;
+    float: left;
+    border: 1px solid #000000;
+    border-radius: 0pt;
+    background: #6699FF;
+    width: 98.1%;
+    height: 800px;
+
+}
+
+article > section
+{
+    display: inline-block;
+    background: #6699FF;
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 1pt;
+    width: 31%;
+    height: 760px;
+    vertical-align: bottom;
+    
+    
+}
+
+article > section ul
+{
+    display: inline-block;
+    
+}
+
+article > section img
+{
+    width: 90%;
+    height: 90%;
+}
+
+article > #sideWays
+{
+    display: inline-block;
+    background: #6699FF;
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 1pt;
+    width: 97%;
+    height: 200px;
+    
+    
+}
+
+article > #sideWays img
+{
+    width: 10%;
+    height: 70%;
+
+}
+
+article > .sideWays
+{
+    display: inline-block;
+    background: #6699FF;
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 1pt;
+    width: 97%;
+    height: 200px;
+    
+    
+}
+
+article > .sideWays img
+{
+    width: 10%;
+    height: 70%;
+
+}
+
+article > #sideWays ul
+{
+  display: inline-block;
+}
+
+article > #sideWays ul li
+{
+list-style-type: none;
+}
+
+main
+{
+    display: inline-block;
+    background: #6699FF;
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 1pt;
+    width: 97%;
+    height: 200px;
+}
+
+
+main ul
+{
+display: inline-block;
+}
+
+main ul li
+{
+list-style-type: none;
+}
+
+.myClass {
+        float:left;
+        width:180px;
+        height:180px;
+    }
+
+    .myCLass2 {
+        float:left;
+        width:700px;
+        height:300px;
+    }
+    .myClass3 {
+    float: right;
+    width: 135px;
+    height: 35px;
+    border: 1px solid #000000;
+}
+
+#rightSection
+{
+    float: right;
+    width: 140px;
+    height: 40px;
+
+}
+
+article > section > #rightSection img
+{
+width:140px;
+height:40px;
+}
+
+.rightSection
+{
+    float: right;
+    width: 140px;
+    height: 40px;
+
+}
+
+article > section > .rightSection img
+{
+width:140px;
+height:40px;
+}
+
+article > #productView
+{
+    display: inline-block;
+    background: #6699FF;
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 1pt;
+    width: 45%;
+    height: 600px;
+    float: right;
+    
+    
+}
+
+article > #productView img
+{
+    width: 10%;
+    height: 70%;
+
+}
+
+article > #sideWays ul
+{
+  display: inline-block;
+}
+
+article > #sideWays ul li
+{
+list-style-type: none;
+}

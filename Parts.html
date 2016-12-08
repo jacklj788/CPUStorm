@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>Parts</title>
+
+<link href="Styles/StyleSheet.css" rel="stylesheet" type="text/css">
+
+<script>
+
+function GPUclick() {
+     document.getElementById("parts").innerHTML = "<main> " +
+                                                " <img src='Images/760_ASUS.png' class='myClass'> " +
+                                                " <span class='myClass2'><ul><li>Asus GeFroce GTX 760</li><li>PCI-E 3.0, 2048MB VRAM</li><li>Price: £161.99</li></ul></span> "+ 
+                                                " <img src='Images/outOfStock.png' class='myClass3' alt='No stock'> " + 
+                                                "</main>";
+}
+
+function CPUclick() {
+     document.getElementById("parts").innerHTML = "<main> " +
+                                                " <img src='Images/i7_resizedNew.png' class='myClass'> " +
+                                                " <span class='myClass2'><ul><li>Intel Core i7-4790k, 4GHz (4.4 turbo)</li> <li>4Cores 8MB Cache</li><li>Price: £259.99</li></ul></span> "+ 
+                                                " <img src='Images/outOfStock.png' class='myClass3' alt='No stock'> " + 
+                                                "</main>";
+}
+
+function RAMclick() {
+     document.getElementById("parts").innerHTML = "<main> " +
+                                                " <img src='Images/kingston_hyperx_red.png' class='myClass'> " +
+                                                " <span class='myClass2'><ul><li>Kingston Hyperx red</li><li>8GB, DDR3, 1866MHz</li> <li>Price: £60.92</li></ul></span> "+ 
+                                                " <img src='Images/outOfStock.png' class='myClass3' alt='No stock'> " + 
+                                                "</main>";
+}
+
+function MOBOclick() {
+     document.getElementById("parts").innerHTML = "<main> " +
+                                                " <img src='Images/mobo.png' class='myClass'> " +
+                                                " <span class='myClass2'><ul><li>760GMA-P34 FX</li><li>AM3+, 16GB RAM max, SATA3 x 2</li> <li>Price: £105.31</li></ul></span> "+ 
+                                                " <img src='Images/outOfStock.png' class='myClass3' alt='No stock'> " + 
+                                                "</main>";
+}
+
+function Storageclick() {
+     document.getElementById("parts").innerHTML = "<main> " +
+                                                " <img src='Images/storage.png' class='myClass'> " +
+                                                " <span class='myClass2'><ul><li>Seagate 2TB Harddrive</li><li>2TB, 3.5inch, 7200RPM</li> <li>Price: £62.95</li></ul></span> "+ 
+                                                " <img src='Images/outOfStock.png' class='myClass3' alt='No stock'> " + 
+                                                "</main>";
+}
+
+function EXTRAclick() {
+     document.getElementById("parts").innerHTML = "<main> " +
+                                                " <img src='Images/keyboard.png' class='myClass'> " +
+                                                " <span class='myClass2'><ul><li>Corsair CG K70</li><li>Cherry MX blue, red backlit</li> <li>Price: £111.58</li></ul></span> "+ 
+                                                " <img src='Images/outOfStock.png' class='myClass3' alt='No stock'> " + 
+                                                "</main>";
+}
+
+</script>
+</head>
+<!-- Javascipt that filters the content on button click -->
+<body>
+
+<header><img src="Images/CPUstorm.png" alt="CPU storm banner"></header>
+<!-- site image banner -->
+<menu>
+	<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="Computer.html">Computer</a></li>
+		<li><a href="Parts.html">Parts</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+	</ul>
+</menu>
+<!-- top bar navigation -->
+<nav>Filter
+<ul>
+<li><button onclick="GPUclick()">GPU</button></li>
+<li><button onclick="CPUclick()">CPU</button></li>
+<li><button onclick="RAMclick()">RAM</button></li>
+<li><button onclick="MOBOclick()">Mobo</button></li>
+<li><button onclick="Storageclick()">Storage</button></li>
+<li><button onclick="EXTRAclick()">Extra</button></li>
+</ul>
+</nav>
+<!-- article that only goes across the screen about 80% -->
+<article id="parts">
+<section class="sideWays">
+<img src="Images/i7_resizedNew.png" alt="i7 CPU">
+<ul>
+<li>Intel Core i7-4790k, 4GHz (4.4 turbo)</li> 
+<li>4Cores 8MB Cache</li>
+<li>Price: £259.99</li>
+</ul>
+<div class="rightSection"><img src="Images/outOfStock.png" alt="No stock"></div>
+</section>
+
+<section class="sideWays">
+<img src="Images/760_ASUS.png" alt="760 GPU">
+<ul>
+<li>Asus GeFroce GTX 760</li>
+<li>PCI-E 3.0, 2048MB VRAM</li>
+<li>Price: £161.99</li>
+</ul>
+<div class="rightSection"><img src="Images/outOfStock.png" alt="No stock"></div>
+</section>
+
+<section class="sideWays">
+<img src="Images/kingston_hyperx_red.png" alt="16GB RAM">
+<ul>
+<li>Kingston Hyperx red</li>
+<li>8GB, DDR3, 1866MHz</li> 
+<li>Price: £60.92</li>
+</ul>
+<div class="rightSection"><img src="Images/outOfStock.png" alt="No stock"></div>
+</section>
+
+<section class="sideWays">
+<img src="Images/mobo.png" alt="MSI motherboard">
+<ul>
+<li>760GMA-P34 FX</li>
+<li>AM3+, 16GB RAM max, SATA3 x 2</li> 
+<li>Price: £105.31</li>
+</ul>
+<div class="rightSection"><img src="Images/outOfStock.png" alt="No stock"></div>
+</section>
+
+<section class="sideWays">
+<img src="Images/storage.png" alt="2TB hard drive">
+<ul>
+<li>Seagate 2TB Harddrive</li>
+<li>2TB, 3.5inch, 7200RPM</li> 
+<li>Price: £62.95</li>
+</ul>
+<div class="rightSection"><img src="Images/outOfStock.png" alt="No stock"></div>
+</section>
+
+<section class="sideWays">
+<img src="Images/keyboard.png" alt="Corsair keyboard">
+<ul>
+<li>Corsair CG K70</li>
+<li>Cherry MX blue, red backlit</li> 
+<li>Price: £111.58</li>
+</ul>
+<div class="rightSection"><img src="Images/outOfStock.png" alt="No stock"></div>
+</section>
+</article>
+
+<footer>&copy; 2015 CPU Storm | Follow us on twitter @CPUstorm | Like us on facebook /CPUstorm </footer>
+
+<!-- site footer banner -->
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link href="Styles/StyleSheet.css" rel="stylesheet" type="text/css">
+
+<script>
+    function validateForm() {
+        var un = document.loginform.usr.value;
+        var pw = document.loginform.pword.value;
+        var username = "username"; 
+        var password = "password";
+        if ((un == username) && (pw == password)) {
+            alert ("Login was successful, thank you");
+            return true;
+        }
+        else {
+            alert ("Login was unsuccessful, please check your username and password");
+            return false;
+        }
+  }
+</script>
+<!-- login validator -->
+</head>
+<body>
+
+<header><img src="Images/CPUstorm.png" alt="CPU storm banner"></header>
+
+<menu>
+	<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="Computer.html">Computer</a></li>
+		<li><a href="Parts.html">Parts</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+	</ul>
+</menu>
+
+<article id="homeArticle">
+<!-- homeArticle to expand accross the whole screen -->
+<form name="loginform" onSubmit="return validateForm();" action="Home.html" method="post">
+    <label>User name</label>
+    <input type="text" name="usr" placeholder="username"> 
+    <br />
+    <label>Password</label>
+    <input type="password" name="pword" placeholder="password">
+    <input type="submit" value="Login"/>
+</form>
+<!-- login forms -->
+</article>
+
+<footer>&copy; 2015 CPU Storm | Follow us on twitter @CPUstorm | Like us on facebook /CPUstorm </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Computer Products</title>
+
+<link href="Styles/StyleSheet.css" rel="stylesheet" type="text/css">
+<!-- links the CSS style to the web page -->
+
+<script>
+
+function allInOneClick() {
+     document.getElementById("demo").innerHTML = "<main> " +
+                                                " <img src='Images/all_in_one.png' class='myClass'> " +
+                                                " <span class='myClass2'><ul><li>ACER Aspire Z3-615 23 inch</li><li>Specifications: Intel Core i3-4130, Windows 8.1, 1TB HDD, 6GB RAM</li><li>Price: £549.99</li></ul></span> "+ 
+                                                " <img src='Images/outOfStock.png' class='myClass3' alt='No stock'> " + 
+                                                "</main>";
+}
+
+function gamingClick() {
+     document.getElementById("demo").innerHTML = "<main> " +
+                                                " <img src='Images/Computer1AMDr9720x.png' class='myClass'> " +
+                                                " <span class='myClass2'><ul><li>Vortex Odyssey Gaming PC</li><li>AMD FX-8350, r9 270x GPU, 18GB RAM</li><li>Price: £899.99</li></ul></span> "+ 
+                                                " <a href='Product.html'> " +
+                                                " <img src='Images/inStock.png' class='myClass3' alt='in stock'> " +
+                                                " </a> " + 
+                                                "</main>";
+}
+
+function officeClick() {
+     document.getElementById("demo").innerHTML = "<main> " +
+                                                " <img src='Images/tower.png' class='myClass'> " +
+                                                " <span class='myClass2'><ul><li>ACER Aspire XC-605 Desktop PC</li><li>Specifications: Intel Core i5-4440, 8GB RAM, 2TB HDD, Widnows 8.1</li><li> Price: £419.99</li></ul></span> "+ 
+                                                " <img src='Images/outOfStock.png' class='myClass3' alt='No stock'> " + 
+                                                "</main>";
+}
+
+function laptopClick() {
+     document.getElementById("demo").innerHTML = "<main> " +
+                                                " <img src='Images/laptop.png' class='myClass'> " +
+                                                " <span class='myClass2'><ul><li>ACER Aspire ES1-111M 11.6 inch Laptop - Black</li><li>Intel Celeron N2840, 2GB RAM, 32GB SSD, Windows 8.1</li><li>Price: £179.99</li></ul></span> "+ 
+                                                " <img src='Images/outOfStock.png' class='myClass3' alt='No stock'> " + 
+                                                "</main>";
+}
+
+function appleClick() {
+     document.getElementById("demo").innerHTML = "<main> " +
+                                                " <img src='Images/apple.png' class='myClass'> " +
+                                                " <span class='myClass2'><ul><li>APPLE iMac 27inch</li><li>Intel Core i5, 8GB RAM, 1TB HDD, OS X Mavericks</li><li>Price: £1,449.00</li></ul></span> "+ 
+                                                " <img src='Images/outOfStock.png' class='myClass3' alt='No stock'> " + 
+                                                "</main>";
+}
+
+</script>
+
+</head>
+
+<!-- the java script above is a product filter that the user can use to display only certain Computer types -->
+
+<body>
+
+<header><img src="Images/CPUstorm.png" alt="CPU storm banner"></header>
+<!-- site banner -->
+<menu>
+	<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="Computer.html">Computer</a></li>
+		<li><a href="Parts.html">Parts</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+	</ul>
+</menu>
+
+<nav>Filter
+<ul>
+<li><button onclick="allInOneClick()">All-in-one</button></li>
+<li><button onclick="gamingClick()">Gaming</button></li>
+<li><button onclick="officeClick()">Office</button></li>
+<li><button onclick="laptopClick()">Laptop</button></li>
+<li><button onclick="appleClick()">Apple</button></li>
+</ul>
+</nav>
+
+<!-- Side bar navigation that uses Javascript to filter the content --> 
+
+<article id="demo">
+<section class="sideWays">
+<img src="Images/Computer1AMDr9720x.png" alt="Gaming PC">
+<ul>
+<li>PC SPECIALIST Vortex Odyssey Gaming PC</li>
+<li>Specifications: AMD FX-8350, AMD Radeon™ R9 270X</li> 
+<li>16GB RAM, 1TB HDD, 120GB SSD</li>
+<li>Price: £899.99</li>
+</ul>
+<div class="rightSection"><a href="Product.html"><img src="Images/inStock.png" alt="In stock"></a></div>
+</section>
+
+<section class="sideWays">
+<img id="allinone" src="Images/all_in_one.png" alt="All in one ACER computer">
+<ul>
+<li>ACER Aspire Z3-615 23" All-in-one</li>
+<li>Specifications: Intel Core i3-4130, Windows 8.1, 1TB HDD, 6GB RAM</li>
+<li>Price: £549.99</li>
+</ul>
+<div class="rightSection"><img src="Images/outOfStock.png" alt="No stock"></div>
+</section>
+
+<section class="sideWays">
+<img src="Images/tower.png" alt="Office ACER computer">
+<ul>
+<li>ACER Aspire XC-605 Desktop PC</li>
+<li>Specifications: Intel Core i5-4440, 8GB RAM, 2TB HDD, Widnows 8.1</li>
+<li> Price: £419.99</li>
+</ul>
+<div class="rightSection"><img src="Images/outOfStock.png" alt="No stock"></div>
+</section>
+
+<section class="sideWays">
+<img src="Images/laptop.png" alt="ACER laptop">
+<ul>
+<li>ACER Aspire ES1-111M 11.6" Laptop - Black</li>
+<li>Intel Celeron N2840, 2GB RAM, 32GB SSD, Windows 8.1</li>
+<li>Price: £179.99</li> 
+</ul>
+<div class="rightSection"><img src="Images/outOfStock.png" alt="No stock"></div>
+</section>
+
+<section class="sideWays">
+<img src="Images/apple.png" alt="Apple iMac 27 inch">
+<ul>
+<li>APPLE iMac 27"</li>
+<li>Specifications: Intel Core i5, 8GB RAM, 1TB HDD, OS X Mavericks</li>
+<li>Price: £1,449.00</li> 
+</ul>
+<div class="rightSection"><img src="Images/outOfStock.png" alt="No stock"></div>
+</section>
+</article>
+
+<!-- these sections are displayed different to the home.html ones so they have class name -->
+
+<footer>&copy; 2015 CPU Storm | Follow us on twitter @CPUstorm | Like us on facebook /CPUstorm </footer>
+
+</body>
+
+</html>
