@@ -157,7 +157,7 @@ article
     border-radius: 0pt;
     background: #6699FF;
     width: 98.1%;
-    height: 800px;
+    min-height: 800px;
 
 }
 
@@ -174,6 +174,11 @@ article > section
     vertical-align: bottom;
     
     
+}
+
+article > .txtHint
+{
+
 }
 
 article > section ul
@@ -209,7 +214,7 @@ article > #sideWays img
 
 }
 
-article > .sideWays
+article > .txtHint
 {
     display: inline-block;
     background: #6699FF;
@@ -223,13 +228,75 @@ article > .sideWays
     
 }
 
+.txtHint
+{
+    display: inline-block;
+    background: #6699FF;
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 1pt;
+    width: 97%;
+    height: 200px;
+    
+    
+}
+
+article > .sideWays
+{
+    display: inline-block;
+    background: #6699FF;
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 1pt;
+    width: 97%;
+    height: 200px;
+    
+    
+}
+/*   THIS IS FOR THE PHP ANNOYING STUFF I AM WORKING ON 09-04-2015   */
+article > #txtHint > .sideWays
+{
+    display: inline-block;
+    background: #6699FF;
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 1pt;
+    width: 97%;
+    height: 200px;    
+}
+
+/* THIS IS FOR PARTS.PHP   */
+article >  .txtHint > #sideWays
+{
+    display: inline-block;
+    background: #6699FF;
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 1pt;
+    width: 97%;
+    height: 200px;
+}
+
+/*  for the product filters images */
+article > #txtHint > .sideWays img
+{
+    width: 10%;
+    height: 65%;
+
+}
 article > .sideWays img
 {
     width: 10%;
-    height: 70%;
+    height: 50%;
 
 }
 
+
+/*  not sure where the id sideWays even is but whatever DONT DELETE */
 article > #sideWays ul
 {
   display: inline-block;
@@ -289,17 +356,23 @@ list-style-type: none;
 
 }
 
-article > section > #rightSection img
+article > #section > .rightSection img
 {
-width:140px;
-height:40px;
+width:240px;
+height:240px;
+}
+
+#parts > #txtHint > .sideWays > .rightSection img
+{
+width:240px;
+height:240px;
 }
 
 .rightSection
 {
     float: right;
-    width: 140px;
-    height: 40px;
+    width: 150px;
+	height: 100px;
 
 }
 
